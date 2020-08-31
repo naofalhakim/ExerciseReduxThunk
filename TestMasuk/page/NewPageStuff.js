@@ -35,11 +35,10 @@ class NewPageStuff extends React.Component {
       exp_date: 0, //date
       harga: 0,
       shortDepend: [
-        {label: 'No Container', value: 1},
+        {label: 'ID', value: 1},
         {label: 'name', value: 2},
         {label: 'Size', value: 3},
         {label: 'exp_date', value: 4},
-        {label: 'Tire', value: 5},
       ],
       sortStuff: 0,
     };
@@ -388,7 +387,7 @@ const FormModal = ({self, isVisiblel, closeModal, actionAddUpdate}) => {
             style={styles.inputText}
             editable={self.state.indexSelcted === -1}
             value={self.state.id}
-            placeholder={'No Container'}
+            placeholder={'ID'}
             onChangeText={(val) => self.setState({id: val})}
           />
         </View>
